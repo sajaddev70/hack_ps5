@@ -145,6 +145,22 @@ const offset_10_00_to_10_01 = {
     PMAP_STORE_DMPDPI: null,
 };
 
+const offset_12_60 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
 // Map firmware versions to shared offset objects
 const ps5_kernel_offset_list = {
     "4.00": offset_4_00_to_4_51,
@@ -176,6 +192,7 @@ const ps5_kernel_offset_list = {
     "9.60": offset_9_05_to_9_60,
     "10.00": offset_10_00_to_10_01,
     "10.01": offset_10_00_to_10_01,
+    "12.60": offset_12_60,
 };
 
 let kernel_offset = null;
@@ -186,6 +203,10 @@ function get_kernel_offset() {
     
     if (!offsets) {
         throw new Error("Unsupported firmware version: " + FW_VERSION);
+    }
+
+    if (offsets.DATA_BASE === 0x0n) {
+        throw new Error("Kernel offsets not yet available for firmware " + FW_VERSION);
     }
     
     kernel_offset = { ...offsets };

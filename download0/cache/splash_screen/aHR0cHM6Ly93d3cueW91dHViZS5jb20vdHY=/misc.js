@@ -474,8 +474,12 @@ function get_dlsym_offset(fw_version) {
     
     // Try exact match first
     const version_key = `${major}.${minor.toString().padStart(2, '0')}`;
-    if (DLSYM_OFFSETS[version_key]) {
-        return DLSYM_OFFSETS[version_key];
+    if (Object.prototype.hasOwnProperty.call(DLSYM_OFFSETS, version_key)) {
+        const offset = DLSYM_OFFSETS[version_key];
+        if (offset === 0n) {
+            throw new Error("Dlsym offset not yet available for firmware " + fw_version);
+        }
+        return offset;
     }
     
     // Find closest version within same major
