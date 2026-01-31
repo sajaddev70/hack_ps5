@@ -109,6 +109,8 @@ let ROP = {
     get ret()                 { return eboot_base + 0x32n;      },
 };
 
+// Developer Note: When adding a new firmware version, add the corresponding dlsym offset here.
+// If the offset is unknown, use 0x0n as a placeholder.
 let DLSYM_OFFSETS = {
     "4.03": 0x317D0n,
     "4.50": 0x317D0n,

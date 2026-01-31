@@ -145,6 +145,16 @@ const offset_10_00_to_10_01 = {
     PMAP_STORE_DMPDPI: null,
 };
 
+/*
+ * DEVELOPER NOTE: Adding support for new firmware versions
+ *
+ * 1. Find the new kernel base and data offsets for the target firmware version.
+ * 2. Create a new offset object (e.g., const offset_12_60 = { ... }).
+ * 3. Fill in the specific offsets (DATA_BASE, etc.) replacing the 0x0n placeholders.
+ * 4. Add the new version key to 'ps5_kernel_offset_list' mapping to your new object.
+ * 5. Update DLSYM_OFFSETS in global.js with the dlsym offset.
+ */
+
 const offset_12_60 = {
     DATA_BASE: 0x0n, // Placeholder
     DATA_SIZE: null,
@@ -206,7 +216,7 @@ function get_kernel_offset() {
     }
 
     if (offsets.DATA_BASE === 0x0n) {
-        throw new Error("Kernel offsets not yet available for firmware " + FW_VERSION);
+        throw create_unsupported_fw_error(FW_VERSION, "Kernel offsets");
     }
     
     kernel_offset = { ...offsets };
@@ -327,5 +337,14 @@ function update_kernel_offsets() {
     
     for (const [key, value] of Object.entries(offsets)) {
         kernel_offset[key] = value;
+    }
+}
+
+function validate_kernel_offsets_present() {
+    try {
+        get_kernel_offset();
+        return true;
+    } catch (e) {
+        throw e;
     }
 }

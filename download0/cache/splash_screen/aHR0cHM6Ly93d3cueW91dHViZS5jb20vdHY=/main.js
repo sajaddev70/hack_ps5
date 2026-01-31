@@ -890,6 +890,10 @@ function trigger() {
             SCE_KERNEL_DLSYM = libkernel_base + get_dlsym_offset(FW_VERSION);
             await log("SCE_KERNEL_DLSYM @ " + toHex(SCE_KERNEL_DLSYM));
         } catch (e) {
+            // Re-throw if it's an unsupported firmware error (explicitly known but missing offsets)
+            if (e.message && e.message.includes("not yet available")) {
+                throw e;
+            }
             SCE_KERNEL_DLSYM = sceKernelGetModuleInfoFromAddr - 0x450n;
             await log("WARNING : sceKernelDlsym offset not found\nUsing predicted value " + toHex(SCE_KERNEL_DLSYM));
         }
@@ -905,6 +909,11 @@ function trigger() {
         
         await load_localscript('kernel.js');
         await load_localscript('kernel_offset.js');
+
+        // Explicitly validate that kernel offsets are present before proceeding
+        // This ensures execution stops here for structurally supported but incomplete firmwares (e.g. 12.60)
+        validate_kernel_offsets_present();
+
         await load_localscript('gpu.js');
 
         await load_localscript('elf_loader.js');
