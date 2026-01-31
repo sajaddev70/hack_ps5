@@ -447,6 +447,10 @@ function write_file(path, text) {
     return Number(written); // number of bytes written
 }
 
+function create_unsupported_fw_error(fw_version, type) {
+    return new Error(`${type} not yet available for firmware ${fw_version}. This firmware is structurally supported but lacks specific memory offsets.`);
+}
+
 function get_nidpath() {
     const path_buffer = malloc(0x255);
     const len_ptr = malloc(8);
@@ -474,8 +478,12 @@ function get_dlsym_offset(fw_version) {
     
     // Try exact match first
     const version_key = `${major}.${minor.toString().padStart(2, '0')}`;
-    if (DLSYM_OFFSETS[version_key]) {
-        return DLSYM_OFFSETS[version_key];
+    if (Object.prototype.hasOwnProperty.call(DLSYM_OFFSETS, version_key)) {
+        const offset = DLSYM_OFFSETS[version_key];
+        if (offset === 0n) {
+            throw create_unsupported_fw_error(fw_version, "Dlsym offset");
+        }
+        return offset;
     }
     
     // Find closest version within same major

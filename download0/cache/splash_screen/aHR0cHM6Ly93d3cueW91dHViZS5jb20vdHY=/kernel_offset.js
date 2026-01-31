@@ -145,6 +145,144 @@ const offset_10_00_to_10_01 = {
     PMAP_STORE_DMPDPI: null,
 };
 
+/*
+ * DEVELOPER NOTE: Adding support for new firmware versions
+ *
+ * 1. Find the new kernel base and data offsets for the target firmware version.
+ * 2. Create a new offset object (e.g., const offset_12_60 = { ... }).
+ * 3. Fill in the specific offsets (DATA_BASE, etc.) replacing the 0x0n placeholders.
+ * 4. Add the new version key to 'ps5_kernel_offset_list' mapping to your new object.
+ * 5. Update DLSYM_OFFSETS in global.js with the dlsym offset.
+ */
+
+const offset_10_50 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_11_00 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_11_02 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_11_50 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_12_00 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_12_02 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_12_50 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_12_60 = {
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
 // Map firmware versions to shared offset objects
 const ps5_kernel_offset_list = {
     "4.00": offset_4_00_to_4_51,
@@ -176,6 +314,14 @@ const ps5_kernel_offset_list = {
     "9.60": offset_9_05_to_9_60,
     "10.00": offset_10_00_to_10_01,
     "10.01": offset_10_00_to_10_01,
+    "10.50": offset_10_50,
+    "11.00": offset_11_00,
+    "11.02": offset_11_02,
+    "11.50": offset_11_50,
+    "12.00": offset_12_00,
+    "12.02": offset_12_02,
+    "12.50": offset_12_50,
+    "12.60": offset_12_60,
 };
 
 let kernel_offset = null;
@@ -186,6 +332,10 @@ function get_kernel_offset() {
     
     if (!offsets) {
         throw new Error("Unsupported firmware version: " + FW_VERSION);
+    }
+
+    if (offsets.DATA_BASE === 0x0n) {
+        throw create_unsupported_fw_error(FW_VERSION, "Kernel offsets");
     }
     
     kernel_offset = { ...offsets };
@@ -306,5 +456,14 @@ function update_kernel_offsets() {
     
     for (const [key, value] of Object.entries(offsets)) {
         kernel_offset[key] = value;
+    }
+}
+
+function validate_kernel_offsets_present() {
+    try {
+        get_kernel_offset();
+        return true;
+    } catch (e) {
+        throw e;
     }
 }
