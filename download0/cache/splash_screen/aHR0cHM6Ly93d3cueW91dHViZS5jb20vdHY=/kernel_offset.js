@@ -155,6 +155,118 @@ const offset_10_00_to_10_01 = {
  * 5. Update DLSYM_OFFSETS in global.js with the dlsym offset.
  */
 
+const offset_10_50 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_11_00 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_11_02 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_11_50 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_12_00 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_12_02 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
+const offset_12_50 = {
+    DATA_BASE: 0x0n, // Placeholder
+    DATA_SIZE: null,
+    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_TO_DYNAMIC: null,
+    DATA_BASE_ALLPROC: 0x0n,
+    DATA_BASE_SECURITY_FLAGS: 0x0n,
+    DATA_BASE_ROOTVNODE: 0x0n,
+    DATA_BASE_KERNEL_PMAP_STORE: 0x0n,
+    DATA_BASE_DATA_CAVE: null,
+    DATA_BASE_GVMSPACE: 0x0n,
+    PMAP_STORE_PML4PML4I: null,
+    PMAP_STORE_DMPML4I: null,
+    PMAP_STORE_DMPDPI: null,
+};
+
 const offset_12_60 = {
     DATA_BASE: 0x0n, // Placeholder
     DATA_SIZE: null,
@@ -202,6 +314,13 @@ const ps5_kernel_offset_list = {
     "9.60": offset_9_05_to_9_60,
     "10.00": offset_10_00_to_10_01,
     "10.01": offset_10_00_to_10_01,
+    "10.50": offset_10_50,
+    "11.00": offset_11_00,
+    "11.02": offset_11_02,
+    "11.50": offset_11_50,
+    "12.00": offset_12_00,
+    "12.02": offset_12_02,
+    "12.50": offset_12_50,
     "12.60": offset_12_60,
 };
 
