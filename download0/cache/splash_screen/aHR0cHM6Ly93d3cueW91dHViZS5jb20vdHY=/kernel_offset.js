@@ -156,9 +156,9 @@ const offset_10_00_to_10_01 = {
  */
 
 const offset_10_50 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,
@@ -172,9 +172,9 @@ const offset_10_50 = {
 };
 
 const offset_11_00 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,
@@ -188,9 +188,9 @@ const offset_11_00 = {
 };
 
 const offset_11_02 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,
@@ -204,9 +204,9 @@ const offset_11_02 = {
 };
 
 const offset_11_50 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,
@@ -220,9 +220,9 @@ const offset_11_50 = {
 };
 
 const offset_12_00 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,
@@ -236,9 +236,9 @@ const offset_12_00 = {
 };
 
 const offset_12_02 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,
@@ -252,9 +252,9 @@ const offset_12_02 = {
 };
 
 const offset_12_50 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,
@@ -268,9 +268,9 @@ const offset_12_50 = {
 };
 
 const offset_12_60 = {
-    DATA_BASE: 0x0n, // Placeholder
+    DATA_BASE: 0x0n, // Placeholder - Pending future discovery
     DATA_SIZE: null,
-    DATA_BASE_DYNAMIC: 0x0n,
+    DATA_BASE_DYNAMIC: 0x0n, // Placeholder - Pending future discovery
     DATA_BASE_TO_DYNAMIC: null,
     DATA_BASE_ALLPROC: 0x0n,
     DATA_BASE_SECURITY_FLAGS: 0x0n,

@@ -139,14 +139,14 @@ let DLSYM_OFFSETS = {
     "9.60": 0x350E0n,
     "10.00": 0x349C0n,
     "10.01": 0x349C0n,
-    "10.50": 0x0n,
-    "11.00": 0x0n,
-    "11.02": 0x0n,
-    "11.50": 0x0n,
-    "12.00": 0x0n,
-    "12.02": 0x0n,
-    "12.50": 0x0n,
-    "12.60": 0x0n
+    "10.50": 0x0n, // Pending future discovery
+    "11.00": 0x0n, // Pending future discovery
+    "11.02": 0x0n, // Pending future discovery
+    "11.50": 0x0n, // Pending future discovery
+    "12.00": 0x0n, // Pending future discovery
+    "12.02": 0x0n, // Pending future discovery
+    "12.50": 0x0n, // Pending future discovery
+    "12.60": 0x0n  // Pending future discovery
 };
 
 let SYSCALL = {
