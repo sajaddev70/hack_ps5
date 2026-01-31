@@ -72,6 +72,22 @@ Some users are reporting that adding a slight delay before loading etaHEN improv
 </Details>
 
 
+## Firmware Support Status
+
+**Current Support:** Firmware 4.03 - 10.01
+
+**Firmware 12.60 Status:**
+Firmware 12.60 is **NOT currently supported**. This project is version-dependent and does **not** automatically work on newer firmware versions.
+
+**Why is it not supported?**
+Support for new firmware versions (like 12.60) requires manual implementation of firmware-specific data, including:
+- **Kernel Offsets:** Specific memory addresses that change with every system update.
+- **Symbol Addresses (dlsym):** Locations of internal functions required for the loader to operate.
+
+**Requirements for adding support:**
+To support a new firmware version, developers must reverse-engineer the new kernel to find these specific offsets and update the codebase accordingly. Until this work is done and verified, the autoloader cannot function on that version.
+
+
 ## Credits
 
 * **[Gezine](https://github.com/Gezine)** - creator of the original [Y2JB](https://github.com/Gezine/Y2JB)
